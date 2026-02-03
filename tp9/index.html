@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="training.js" defer></script>
+</head>
+<body>
+  <h1>Calculatrice</h1>
+
+  <label for="t1">Nombre 1</label>
+  <input type="text" id="t1" placeholder="Saisir un nombre">
+
+  <label for="t2">Nombre 2</label>
+  <input type="text" id="t2" placeholder="Saisir un nombre">
+
+  <div class="buttons">
+    <button onclick="addition()">+</button>
+    <button onclick="soustraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+  </div>
+
+  <div class="buttons">
+    <button onclick="pairImpair()">Pair/Impair</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="permute()">Permute</button>
+  </div>
+
+  <label for="resultat">Résultat</label>
+  <input type="text" id="resultat" placeholder="Résultat" readonly>
+
+  <label for="parite">Résultat Pair/Impair</label>
+  <input type="text" id="parite" placeholder="Parité" readonly>
+
+  <p class="footer">
+   Dans ce TP, j’ai découvert comment manipuler le JavaScript, comprendre la logique des fonctions et créer une calculatrice interactive qui fonctionne parfaitement.
+  </p>
+</body>
+</html>
